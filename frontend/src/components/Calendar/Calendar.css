@@ -1,0 +1,99 @@
+/* Calendar.css */
+
+.calendar {
+  width: 300px;
+  margin: auto;
+  font-family: 'Arial', sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px;
+}
+
+.header button {
+  background-color: #fff;
+  color: #3498db;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.weekdays {
+  display: flex;
+  background-color: #f0f0f0;
+  padding: 5px;
+}
+
+.weekday {
+  flex: 1;
+  text-align: center;
+
+  font-weight: bold;
+}
+
+.days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+.day {
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.day:hover {
+  background-color: #3498db;
+  color: #fff;
+}
+
+.present {
+  background-color: #2ecc71; /* Green color for present days */
+  color: #fff;
+}
+
+.absent {
+  background-color: #e74c3c; /* Red color for absent days */
+  color: #fff;
+}
+
+.empty-day {
+  visibility: hidden;
+}
+
+.legend {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.legend-item.present {
+  color: #2ecc71;
+}
+
+.legend-item.absent {
+  color: #e74c3c;
+}
+
+
+/* Calendar.css */
+
+.day.has-attendance {
+  background-color: green;
+  color: white;
+  /* Add any other styling you want for dates with attendance */
+}
